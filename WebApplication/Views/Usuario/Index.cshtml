@@ -1,0 +1,23 @@
+﻿@model List<WebApplication.Models.UsuarioModel >
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Usuario</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item._Usuario</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
